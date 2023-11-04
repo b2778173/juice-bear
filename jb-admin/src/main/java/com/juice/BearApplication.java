@@ -1,4 +1,4 @@
-package com.juice.bear;
+package com.juice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

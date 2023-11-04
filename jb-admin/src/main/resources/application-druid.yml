@@ -1,0 +1,59 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+      # Master DB
+      master:
+        url: jdbc:mysql://cheng.tplinkdns.com:23306/Juice-Bear?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+        username: demouser
+        password: e23s5
+      # Slave DB
+      slave:
+        enabled: false
+        url:
+        username:
+        password:
+      # 初始連線數量
+      initialSize: 5
+      # 最小連線池數量
+      minIdle: 10
+      # 最大連線池數量
+      maxActive: 20
+      # 取得連線等待逾時的時間(ms)
+      maxWait: 60000
+      # 連線逾時的時間(ms)
+      connectTimeout: 30000
+      # 網路逾時的時間(ms)
+      socketTimeout: 60000
+      # 間隔多久執行測試，測試需要關閉空閑的連接(ms)
+      timeBetweenEvictionRunsMillis: 60000
+      # 連線池中最小存活時間(ms)
+      minEvictableIdleTimeMillis: 300000
+      # 連線池中最大存活時間(ms)
+      maxEvictableIdleTimeMillis: 900000
+      # 測試連線是否有效
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      webStatFilter:
+        enabled: true
+      statViewServlet:
+        enabled: true
+        # 白名單(空白則允許全部)
+        allow:
+        url-pattern: /druid/*
+        # 控制台管理的帳號及密碼
+        login-username: juice
+        login-password: bear
+      filter:
+        stat:
+          enabled: true
+          # slow-sql紀錄
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
