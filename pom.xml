@@ -36,6 +36,8 @@
         <poi.version>4.1.2</poi.version>
         <velocity.version>2.3</velocity.version>
         <jwt.version>0.9.1</jwt.version>
+        <redisson-spring-boot-starter.version>3.17.6</redisson-spring-boot-starter.version>
+        <kryo-shaded.version>4.0.2</kryo-shaded.version>
     </properties>
 
     <dependencyManagement>
@@ -162,6 +164,11 @@
                 <groupId>com.juice</groupId>
                 <artifactId>jb-common</artifactId>
                 <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>20.0</version>
             </dependency>
 
         </dependencies>
