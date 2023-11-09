@@ -4,6 +4,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 import com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties;
 import com.alibaba.druid.util.Utils;
+import com.jb.framework.config.properties.DruidProperties;
 import com.jb.framework.datasource.DynamicDataSource;
 import com.juice.common.enums.DataSourceType;
 import com.juice.common.utils.JbSpringUtils;
