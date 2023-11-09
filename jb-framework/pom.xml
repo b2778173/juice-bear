@@ -58,6 +58,7 @@
             <groupId>com.juice</groupId>
             <artifactId>jb-system</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>

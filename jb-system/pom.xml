@@ -16,7 +16,6 @@
         <dependency>
             <groupId>com.juice</groupId>
             <artifactId>jb-common</artifactId>
-            <version>0.0.1</version>
         </dependency>
     </dependencies>
 
