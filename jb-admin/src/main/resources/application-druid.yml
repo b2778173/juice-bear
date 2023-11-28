@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: juice bear
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
